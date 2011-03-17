@@ -3,9 +3,7 @@ app      = module.parent.exports;
 
 
 app.helpers( {
-  email: function(address) {
-    return jade.render(".email #{address}", {locals: {address: address}});
-  },
+  
   text_tag_for: function(obj, prop) {
     
     html = "label(for=obj + '[' + prop + ']') #{prop.decamelize()}:\n" + 
@@ -13,6 +11,7 @@ app.helpers( {
   
     return jade.render(html, {locals: {obj: obj, prop: prop} });
   },
+  
   integer_tag_for: function(obj, prop) {
     
     html = "label(for=obj + '[' + prop + ']') #{prop.decamelize()}:\n" + 
