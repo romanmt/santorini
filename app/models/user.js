@@ -7,8 +7,9 @@ var mongoose = require('mongoose')
   , ObjectId = Schema.ObjectId;
 
 var User = new Schema({
-    name  : String
-  , email : String
+    name       : String
+  , email      : String
+  , acrualRate : Number
 });
 
 mongoose.model('User', User);

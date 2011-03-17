@@ -1,8 +1,7 @@
-
 var mongoose = require('mongoose')
+  , inspect = global.inspect = require('eyes').inspector({styles: {all: 'magenta'}})
   , db = mongoose.connect('mongodb://localhost/cleveland')
   , express = require('express')
-  , stylus = require('stylus') 
   , pub = __dirname + '/public'
   , fs = require('fs')
   , path = require('path');
@@ -14,12 +13,8 @@ var app = module.exports = express.createServer(
     express.static(pub)
   , express.logger()
   , express.bodyParser()
+  , express.methodOverride()
 );
-
-app.use(stylus.middleware({
-    src: __dirname + '/app/views'
-  , dest: __dirname + '/public'
-}));
 
 app.configure(function(){
     app.set('views', __dirname + '/app/views')

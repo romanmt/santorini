@@ -27,15 +27,22 @@ app.get('/user/:id', function(req, res){
 });
 
 app.get('/users/new', function(req, res){
-  res.partial('users/new', {});
+  res.render('users/new', {});
 });
 
 app.post('/users/new', function(req, res){
   console.log(req.body.user);
   u = new user(req.body.user);
   u.save(function(err){
+    if(err)
+      console.log("error:" + err);
     res.redirect('/');
   });
 });
 
-
+app.del('/user/delete/:id', function(req, res) {
+  user.findById(req.params.id, function(err, u) {
+    u.remove();
+    res.redirect('/');
+  })
+});

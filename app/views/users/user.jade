@@ -1,3 +1,8 @@
-.user
-  a(href='user/' + user._id)= user.name
+li.user
+  p
+    a(href='user/' + user._id)= user.name 
+    &nbsp; 
+    a(method: 'delete', href: '/user/delete/' + user._id) 
+      img(src: '/images/icons/icon_delete.png')
   .email= user.email
+  .acrual-rate= user.acrualRate

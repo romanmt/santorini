@@ -1,11 +1,18 @@
-h1 New User
-form#save(method: "post")
-  p
-    label(for="user[name]") Name:
-      input(type: "text", name: "user[name]")
-  p 
-    label(for="user[email]") Email:
-      input(type: "text", name: "user[email]")
-        
-  p.buttons
-    input(type="submit", value="Save")      
+.container
+  .conthead
+    h1 New User
+  .contentbox
+    form#save(method: "post")
+      .inputboxes
+        label(for="user[name]") Name:
+        input(type: "text", name: "user[name]").inputbox
+      .inputboxes 
+        label(for="user[email]") Email:
+        input(type: "text", name: "user[email]").inputbox
+      .inputboxes
+        label(for="user[acrualRate]") Acrual Rate:    
+        input(type: "integer", name: "user[acrualRate]").inputbox.smaller       
+      .buttons 
+        input(type="submit", value="Save").btn 
+        span &nbsp; or &nbsp;
+        a(href: '/') cancel
