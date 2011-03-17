@@ -4,12 +4,11 @@
   .contentbox
     form#save(method: "post")
       .inputboxes
-        !=text_box('user', 'name')
+        !=text_tag_for("user", "name");
       .inputboxes 
-        !=text_box('user', 'email')
+        !=text_tag_for("user", "email");
       .inputboxes
-        label(for="user[acrualRate]") Acrual Rate:    
-        input(type: "integer", name: "user[acrualRate]").inputbox.smaller       
+        !=integer_tag_for("user", "acrualRate");
       .buttons 
         input(type="submit", value="Save").btn 
         span &nbsp; or &nbsp;

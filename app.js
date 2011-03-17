@@ -4,7 +4,8 @@ var mongoose = require('mongoose')
   , express = require('express')
   , pub = __dirname + '/public'
   , fs = require('fs')
-  , path = require('path');
+  , path = require('path')
+  , string_ext = require(__dirname + '/lib/string_ext');
 
 // auto-compile sass to css with "compiler"
 // and then serve with connect's staticProvider

@@ -1,7 +1,4 @@
 li.user
-  p
-    a(href='user/' + user._id)= user.name 
-    &nbsp; 
-    !=delete_tag("user", user._id)
+  a(href='user/' + user._id)= user.name 
   .email= user.email
   .acrual-rate= user.acrualRate
