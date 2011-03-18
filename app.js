@@ -2,6 +2,7 @@
 var mongoose = require('mongoose')
   , db = mongoose.connect('mongodb://localhost/cleveland')
   , express = require('express')
+  , stylus = require('stylus') 
   , pub = __dirname + '/public'
   , fs = require('fs')
   , path = require('path');
@@ -10,11 +11,15 @@ var mongoose = require('mongoose')
 // and then serve with connect's staticProvider
 
 var app = module.exports = express.createServer(
-    express.compiler({ src: pub, enable: ['sass'] })
-  , express.static(pub)
+    express.static(pub)
   , express.logger()
   , express.bodyParser()
 );
+
+app.use(stylus.middleware({
+    src: __dirname + '/app/views'
+  , dest: __dirname + '/public'
+}));
 
 app.configure(function(){
     app.set('views', __dirname + '/app/views')
