@@ -24,10 +24,10 @@ app.configure(function(){
 });
 
 fs.readdirSync(__dirname + '/app/helpers').map(function(file) {
-	var helper = path.basename(file, '.js');
-	if (path.extname(file) !== '') {
-	  require(__dirname + '/app/helpers/' + helper);
-	}
+  var helper = path.basename(file, '.js');
+  if (path.extname(file) !== '') {
+    require(__dirname + '/app/helpers/' + helper);
+  }
 });
 
 fs.readdirSync(__dirname + '/app/models').map(function(file) {
@@ -45,5 +45,3 @@ fs.readdirSync(__dirname + '/app/controllers').map(function(file) {
   }
 });
 
-app.listen(3000);
-console.log('Express app started on port 3000');

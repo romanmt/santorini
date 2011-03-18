@@ -33,7 +33,8 @@ app.helpers( {
            "  f.appendChild(m);" + 
            "  f.submit(); " +
            "};" +
-           "return false;\" href=#{url}>delete</a>";
+           "return false;\" href=#{url}>" +
+           "<img src='images/icons/icon_delete.png'/ alt='delete'></a>";
 
     return jade.render(html, {locals: {url: url}});
   }
