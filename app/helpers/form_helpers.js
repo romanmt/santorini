@@ -18,9 +18,9 @@ app.helpers( {
   
     return jade.render(html, {locals: {obj: obj, prop: prop} });
   }
-, delete_tag: function(obj, id) {
-    url = "/" + obj + "/" + id; 
-    html = "<a onclick='if (confirm('Are you sure?')) { " +
+, delete_tag_for: function(obj, id) {
+    url = "/" + obj + "/delete/" + id; 
+    html = "<a onclick=\"if (confirm('Are you sure?')) { " +
            "  var f = document.createElement('form'); " +
            "  f.style.display = 'none'; " +
            "  this.parentNode.appendChild(f); " +
@@ -33,7 +33,7 @@ app.helpers( {
            "  f.appendChild(m);" + 
            "  f.submit(); " +
            "};" +
-           "return false;' href=url>delete</a>";
+           "return false;\" href=#{url}>delete</a>";
 
     return jade.render(html, {locals: {url: url}});
   }
