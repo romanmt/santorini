@@ -2,7 +2,6 @@ li.user
   p
     a(href='user/' + user._id)= user.name 
     &nbsp; 
-    a(method: 'delete', href: '/user/delete/' + user._id) 
-      img(src: '/images/icons/icon_delete.png')
+    !=delete_tag("user", user._id)
   .email= user.email
   .acrual-rate= user.acrualRate

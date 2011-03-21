@@ -4,11 +4,9 @@
   .contentbox
     form#save(method: "post")
       .inputboxes
-        label(for="user[name]") Name:
-        input(type: "text", name: "user[name]").inputbox
+        !=text_box('user', 'name')
       .inputboxes 
-        label(for="user[email]") Email:
-        input(type: "text", name: "user[email]").inputbox
+        !=text_box('user', 'email')
       .inputboxes
         label(for="user[acrualRate]") Acrual Rate:    
         input(type: "integer", name: "user[acrualRate]").inputbox.smaller       

@@ -22,6 +22,13 @@ app.configure(function(){
   , app.set('reload views', 1000);
 });
 
+fs.readdirSync(__dirname + '/app/helpers').map(function(file) {
+	var helper = path.basename(file, '.js');
+	if (path.extname(file) !== '') {
+	  require(__dirname + '/app/helpers/' + helper);
+	}
+});
+
 fs.readdirSync(__dirname + '/app/models').map(function(file) {
   var model = path.basename(file, '.js');
   if(path.extname(file) !== '') {
