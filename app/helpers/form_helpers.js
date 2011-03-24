@@ -4,19 +4,18 @@ app      = module.parent.exports;
 
 app.helpers( {
   
-  text_tag_for: function(obj, prop) {
+  text_tag_for: function(obj, prop, value) {
     
     html = "label(for=obj + '[' + prop + ']') #{prop.decamelize()}:\n" + 
-            "input(type: 'text', name: obj +'[' + prop + ']').inputbox";
-  
-    return jade.render(html, {locals: {obj: obj, prop: prop} });
+            "input(type: 'text', name: obj +'[' + prop + ']', value: value).inputbox;";
+    return jade.render(html, {locals: {obj: obj, prop: prop, value: value} });
   }
-, integer_tag_for: function(obj, prop) {
+, integer_tag_for: function(obj, prop, value) {
     
     html = "label(for=obj + '[' + prop + ']') #{prop.decamelize()}:\n" + 
-            "input(type: 'integer', name: obj +'[' + prop + ']').inputbox.smaller";
+            "input(type: 'integer', name: obj +'[' + prop + ']', value: value).inputbox.smaller";
   
-    return jade.render(html, {locals: {obj: obj, prop: prop} });
+    return jade.render(html, {locals: {obj: obj, prop: prop, value: value} });
   }
 , delete_tag_for: function(obj, id) {
     url = "/" + obj + "/delete/" + id; 
@@ -34,8 +33,14 @@ app.helpers( {
            "  f.submit(); " +
            "};" +
            "return false;\" href=#{url}>" +
-           "<img src='images/icons/icon_delete.png'/ alt='delete'></a>";
+           "<img src='/images/icons/icon_delete.png'/ alt='delete'></a>";
 
+    return jade.render(html, {locals: {url: url}});
+  }
+, edit_tag_for: function(obj, id) {
+    url = "/" + obj + "/edit/" + id;
+    html = "a(href: url, )\n " +
+           "  img(src: '/images/icons/icon_edit.png', alt: 'edit')";
     return jade.render(html, {locals: {url: url}});
   }
 });

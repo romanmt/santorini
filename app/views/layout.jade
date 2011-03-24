@@ -3,6 +3,7 @@ html
   head
     title Matt's Killer Node App
     link(rel="stylesheet", href="/styles/main.css")
+    link(href='themes/green/styles.css', rel='stylesheet', type='text/css')
   body
     #header
       img(src: '/images/logo.png', alt: 'Didit PTO').logo
@@ -17,6 +18,7 @@ html
           ul.navigation(style: "display: none;")
             li
               a(title: "list", href: '/users/list') List Users
+              a(title: "add", href: '/users/new') Add User
 
     #right
       #content!= body

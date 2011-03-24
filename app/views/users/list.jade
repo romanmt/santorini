@@ -1,3 +1,20 @@
-ul#users
-  - each user in list
-    li!= partial('user', user)
+.container
+  .conthead
+    h2 Users
+  .contentbox
+    - if (list.length)
+      table
+        thead
+          tr
+            th Name
+            th Email
+            th Accrual Rate
+            th Actions
+          -each user in list
+            tr
+              td #{ user.name }
+              td #{ user.email }
+              td #{ user.acrualRate }
+              td 
+                !=delete_tag_for("user", user)
+                !=edit_tag_for("user", user.id)
