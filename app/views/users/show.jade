@@ -1,0 +1,9 @@
+.container
+  .conthead
+    h2 #{user.fullName} 
+  .contentbox
+    li.user
+      a(href='user/' + user._id)= user.name 
+      .email= user.email
+      .acrual-rate= user.acrualRate
+ 
