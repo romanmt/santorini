@@ -1,4 +1,4 @@
-var mongoose = require('mongoose@1.1.4')
+var mongoose = require('mongoose@1.1.11')
   , express = require('express@2.0.0beta3')
   , jade = require('jade@0.9.1')
   , inspect = global.inspect = require('eyes@0.1.6').inspector({styles: {all: 'magenta'}})

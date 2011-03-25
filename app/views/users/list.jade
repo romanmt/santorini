@@ -8,12 +8,14 @@
           tr
             th Name
             th Email
+            th PTO Balance
             th Accrual Rate
             th Actions
           -each user in list
             tr
               td #{ user.fullName }
               td #{ user.email }
+              td #{ user.ptoBalance }
               td #{ user.acrualRate }
               td 
                 !=delete_tag_for("user", user.id)
