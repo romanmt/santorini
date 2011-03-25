@@ -3,13 +3,8 @@
     h1 New User
   .contentbox
     form#save(method: "post")
-      .inputboxes
-        !=text_tag_for("user", "name");
-      .inputboxes 
-        !=text_tag_for("user", "email");
-      .inputboxes
-        !=integer_tag_for("user", "acrualRate");
+      !=partial('fields')
       .buttons 
-        input(type="submit", value="Save").btn 
+        input(type="submit", value="Create").btn 
         span &nbsp; or &nbsp;
         a(href: '/') cancel

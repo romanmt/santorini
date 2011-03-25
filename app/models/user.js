@@ -7,9 +7,15 @@ var mongoose = require('mongoose')
   , ObjectId = Schema.ObjectId;
 
 var User = new Schema({
-    name       : String
+    firstName  : String
+  , lastName   : String
   , email      : String
   , acrualRate : Number
+  , name       : String
+});
+
+User.virtual('fullName').get(function() {
+  return this.firstName + " " + this.lastName;
 });
 
 mongoose.model('User', User);

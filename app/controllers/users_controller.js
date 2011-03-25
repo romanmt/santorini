@@ -2,14 +2,14 @@ app = module.parent.exports;
 
 app.get('/', function(req, res){
     user.find({}, function(err, docs){
-    res.render('users', { users: docs }); 
+    res.render('users/list', { list: docs }); 
   })
 });
 
 app.get('/users', function(req, res){
   user.find({}, function(err, docs){
     console.log(docs);
-    res.partial('users/user', docs);
+    res.partial('users/list', docs);
   })
 });
 
