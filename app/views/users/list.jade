@@ -16,5 +16,5 @@
               td #{ user.email }
               td #{ user.acrualRate }
               td 
-                !=delete_tag_for("user", user)
+                !=delete_tag_for("user", user.id)
                 !=edit_tag_for("user", user.id)

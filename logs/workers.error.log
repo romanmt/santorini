@@ -1,0 +1,187 @@
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Cannot call method 'remove' of null
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:72:7
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:703:22
+    at [object Object].<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/collection.js:447:35)
+    at [object Object].emit (events.js:45:17)
+    at [object Object].<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/db.js:83:12)
+    at [object Object].emit (events.js:42:17)
+    at Socket.<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/connection.js:82:16)
+    at Socket.emit (events.js:42:17)
+    at Socket._onReadable (net.js:644:31)
+    at IOWatcher.onReadable [as callback] (net.js:156:10)
+TypeError: Cannot call method 'remove' of null
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:72:7
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:703:22
+    at [object Object].<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/collection.js:447:35)
+    at [object Object].emit (events.js:45:17)
+    at [object Object].<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/db.js:83:12)
+    at [object Object].emit (events.js:42:17)
+    at Socket.<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/connection.js:82:16)
+    at Socket.emit (events.js:42:17)
+    at Socket._onReadable (net.js:644:31)
+    at IOWatcher.onReadable [as callback] (net.js:156:10)
+TypeError: Cannot call method 'remove' of null
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:72:7
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:703:22
+    at [object Object].<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/collection.js:447:35)
+    at [object Object].emit (events.js:45:17)
+    at [object Object].<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/db.js:83:12)
+    at [object Object].emit (events.js:42:17)
+    at Socket.<anonymous> (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/support/node-mongodb-native/lib/mongodb/connection.js:82:16)
+    at Socket.emit (events.js:42:17)
+    at Socket._onReadable (net.js:644:31)
+    at IOWatcher.onReadable [as callback] (net.js:156:10)
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at /Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:322:21
+    at Object.some (native)
+    at [object Object].some (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:321:33)
+    at model.modified (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/document.js:406:27)
+    at merge (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/utils.js:409:21)
+    at Query.find (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:88:5)
+    at new Query (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/query.js:16:22)
+    at Function.update (/Users/matt/.nave/installed/0.4.2/lib/node/.npm/mongoose/1.1.4/package/lib/mongoose/model.js:567:15)
+    at /Users/matt/Workspace/node/cle/app/controllers/users_controller.js:57:10

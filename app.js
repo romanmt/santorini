@@ -1,7 +1,8 @@
-var mongoose = require('mongoose')
-  , inspect = global.inspect = require('eyes').inspector({styles: {all: 'magenta'}})
+var mongoose = require('mongoose@1.1.4')
+  , express = require('express@2.0.0beta3')
+  , jade = require('jade@0.9.1')
+  , inspect = global.inspect = require('eyes@0.1.6').inspector({styles: {all: 'magenta'}})
   , db = mongoose.connect('mongodb://localhost/cleveland')
-  , express = require('express')
   , pub = __dirname + '/public'
   , fs = require('fs')
   , path = require('path')

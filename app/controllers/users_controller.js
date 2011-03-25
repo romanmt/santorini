@@ -39,7 +39,7 @@ app.post('/users/new', function(req, res){
     res.redirect('/');
   });
 });
-
+ 
 app.get('/user/edit/:id', function(req, res) {
   user.findById(req.params.id, function(err, u) {
     if(err)
@@ -49,13 +49,15 @@ app.get('/user/edit/:id', function(req, res) {
   })
 })
 
-app.post('/users/edit', function(req, res){
+app.post('/user/edit/:id', function(req, res){
   console.log(req.body.user);
-  u = new user(req.body.user);
-  u.save(function(err){
+  user.findById(req.params.id, function(err, u) {
     if(err)
       console.log("error:" + err);
-    res.redirect('/');
+    
+    user.update({_id: u.id}, req.body.user, function(err) {
+	  res.redirect('/');
+    });	
   });
 });
 

@@ -1,4 +1,4 @@
-var cluster = require('cluster')
+var cluster = require('cluster@0.5.1')
   , app = require('./app');
 
 cluster('./app')
