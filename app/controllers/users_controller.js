@@ -50,14 +50,13 @@ app.get('/user/edit/:id', function(req, res) {
 })
 
 app.post('/user/edit/:id', function(req, res){
-  console.log(req.body.user);
   user.findById(req.params.id, function(err, u) {
     if(err)
       console.log("error:" + err);
     
     user.update({_id: u.id}, req.body.user, function(err) {
-	  res.redirect('/');
-    });	
+    res.redirect('/');
+    }); 
   });
 });
 
@@ -66,4 +65,12 @@ app.del('/user/delete/:id', function(req, res) {
     u.remove();
     res.redirect('/');
   })
+});
+
+app.get('/user/show/:id', function(req, res) {
+  user.findById(req.params.id, function(err, u) {
+    if(err)
+      console.log("error:" + err);
+    res.render('users/show', {user : u});
+  }); 
 });

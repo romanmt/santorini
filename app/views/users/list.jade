@@ -13,7 +13,8 @@
             th Actions
           -each user in list
             tr
-              td #{ user.fullName }
+              td 
+                a(href: '/user/show/' + user._id) #{ user.fullName }
               td #{ user.email }
               td #{ user.ptoBalance }
               td #{ user.acrualRate }
