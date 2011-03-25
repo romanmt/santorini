@@ -1,10 +1,10 @@
 // Side Navigation Menu Slide
 
 $(document).ready(function() {
-	$("#nav > li > a.collapsed + ul").slideToggle("medium");
-	$("#nav > li > a").click(function() {
-		$(this).toggleClass("expanded").toggleClass("collapsed").find("+ ul").slideToggle("medium");
-	});
+  $("#nav > li > a.collapsed + ul").slideToggle("medium");
+  $("#nav > li > a").click(function() {
+    $(this).toggleClass("expanded").toggleClass("collapsed").find("+ ul").slideToggle("medium");
+  });
 });
 
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 // Select all checkboxes
 
-	$(document).ready(function(){
+  $(document).ready(function(){
       $("#checkboxall").click(function()
       {
       var checked_status = this.checked;
@@ -39,66 +39,73 @@ $(document).ready(function() {
       });
       });
       });
-	
+  
 // Fancybox (Lightbox Gallery Effect)
 
-		$(document).ready(function() {
-			$("a.galleryimg").fancybox();
-			});
-		
+    $(document).ready(function() {
+      $("a.galleryimg").fancybox();
+      });
+    
 // Graph Script
 
 $(document).ready(function(){
- 	$('table.pie').visualize({type: 'pie'});
-	$('table.bar').visualize({type: 'bar'});
-	$('table.area').visualize({type: 'area'});
-	$('table.line').visualize({type: 'line'});
+  $('table.pie').visualize({type: 'pie'});
+  $('table.bar').visualize({type: 'bar'});
+  $('table.area').visualize({type: 'area'});
+  $('table.line').visualize({type: 'line'});
 });
 
 // Tab Switching
 
-	$(document).ready(function(){
-		$("#graphs, #tabs").tabs();
-	});
+  $(document).ready(function(){
+    $("#graphs, #tabs").tabs();
+  });
 
 // Calendar
 
 $(document).ready(function() {
-		var date = new Date();
-		var d = date.getDate();
-		var m = date.getMonth();
-		var y = date.getFullYear();
-		
-		var calendar = $('#calendar').fullCalendar({
-			header: {
-				left: 'title',
-				right: 'prev,next today, month,agendaWeek,agendaDay'
-			},
-			weekends: false,
-			selectable: true,
-			selectHelper: true,
-			select: function(start, end, allDay) {
-				var title = prompt('Event Title:');
-				if (title) {
-					calendar.fullCalendar('renderEvent',
-						{
-							title: title,
-							start: start,
-							end: end,
-							allDay: allDay
-						},
-						true // make the event "stick"
-					);
-				}
-				calendar.fullCalendar('unselect');
-			},
-			editable: true,
-			events: "/user/events.json"
-		});
-		
-	});
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = date.getFullYear();
+    
+    var calendar = $('#calendar');
+    calendar.fullCalendar({
+      header: {
+        left: 'title',
+        right: 'prev,next today, month,agendaWeek,agendaDay'
+      },
+      weekends: false,
+      selectable: true,
+      selectHelper: true,
+      events: function(start, end, callback) {
+        $.get('/user/events.json', function(data) {
+          callback(data);
+        })
+      },
+      select: function(start, end, allDay) {
+        var title = prompt('Event Title:');
+        console.log(title);
+        if (title) {
+          var evnt = {
+              title: title,
+              start: start,
+             end: end,
+              allDay: allDay
+            };
+          $.post('/event/new', evnt, function(data) {
+            calendar.fullCalendar('renderEvent', evnt, true);
+            console.log(data);
+          });
+        }
+        //calendar.fullCalendar('unselect');
+      },
+      editable: true
+    });
+    
+  });
 // Rich text editor/WYSIWYG
 
-	$(document).ready(function() {
-			$('#wysiwyg').wysiwyg();
-		});
+  $(document).ready(function() {
+      $('#wysiwyg').wysiwyg();
+    });

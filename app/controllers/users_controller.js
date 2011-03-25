@@ -63,18 +63,36 @@ app.del('/user/delete/:id', function(req, res) {
 app.get('/user/show/:id', function(req, res) {
   user.findById(req.params.id, function(err, u) {
     if(err)
-      u.events.push({title: "ugh", start: new Date()})
-      u.save(function(err){});
       console.log("error:" + err);
     res.render('users/show', {user : u});
   }); 
 });
 
 app.get('/user/events.json', function(req, res) {
-  user.find({email: 'melissa@gmail.com'}, function(err, u) {
-	if(err)
-	  throw err;
-	console.log(inspect(JSON.stringify(u)));
-	res.send(JSON.stringify(u.events));
+  user.findById("4d8bd31f789345495f000001", function(err, u) {
+    if(err)
+      throw err;
+    console.log(inspect(JSON.stringify(u)));
+    res.send(JSON.stringify(u.events));
   });
+});
+
+app.post('/event/new', function(req, res) {
+  console.log("made it to the server");
+  inspect(req.body);
+  user.findById("4d8bd31f789345495f000001", function(err, u) {
+    console.log("found user");
+    inspect(u);
+    if(err) {
+      console.log("error" + err);
+      throw err;  
+    }  
+    u.events.push(req.body);
+    console.log("saving: ");
+    inspect(u);
+    u.save(function (err) {
+      console.log(err);
+    });
+  });
+  res.send("success");
 });
