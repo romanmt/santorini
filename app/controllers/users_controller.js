@@ -19,13 +19,6 @@ app.get('/users/list', function(req, res){
   })  
 }); 
 
-app.get('/user/:id', function(req, res){
-  user.findById(req.params.id, function(err, user){
-    console.log(user);
-      res.partial('users/user', [user]);  
-  })
-});
-
 app.get('/users/new', function(req, res){
   res.render('users/new', {});
 });
@@ -70,7 +63,18 @@ app.del('/user/delete/:id', function(req, res) {
 app.get('/user/show/:id', function(req, res) {
   user.findById(req.params.id, function(err, u) {
     if(err)
+      u.events.push({title: "ugh", start: new Date()})
+      u.save(function(err){});
       console.log("error:" + err);
     res.render('users/show', {user : u});
   }); 
+});
+
+app.get('/user/events.json', function(req, res) {
+  user.find({email: 'melissa@gmail.com'}, function(err, u) {
+	if(err)
+	  throw err;
+	console.log(inspect(JSON.stringify(u)));
+	res.send(JSON.stringify(u.events));
+  });
 });

@@ -5,10 +5,10 @@ function fullName () {
   return this.firstName + " " + this.lastName;
 }
 
-var Request = new Schema({
-    start   : Date
+var Event = new Schema({
+	title   : String
+  , start   : Date
   , end     : Date
-  , status  : { type: String, default: "pending" } 
 });
 
 var User = new Schema({
@@ -20,7 +20,7 @@ var User = new Schema({
   , updatedAt   : { type: Date, default: new Date() }
   , createdAt   : { type: Date, default: new Date() }
   , fullName    : { type: String, get: fullName }
-  , requests    : [Request]
+  , events    : [Event]
 });
 
 mongoose.model('User', User);

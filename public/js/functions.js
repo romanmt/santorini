@@ -74,6 +74,7 @@ $(document).ready(function() {
 				left: 'title',
 				right: 'prev,next today, month,agendaWeek,agendaDay'
 			},
+			weekends: false,
 			selectable: true,
 			selectHelper: true,
 			select: function(start, end, allDay) {
@@ -92,27 +93,10 @@ $(document).ready(function() {
 				calendar.fullCalendar('unselect');
 			},
 			editable: true,
-			events: [
-				{
-					title: 'All Day Event',
-					start: new Date(y, m, 8)
-				},
-				{
-					title: 'Long Event (Drag Me)',
-					start: new Date(y, m, d-5),
-					end: new Date(y, m, d-2)
-				},
-				{
-					title: 'Click for Google',
-					start: new Date(y, m, 28),
-					end: new Date(y, m, 29),
-					url: 'http://google.com/'
-				}
-			]
+			events: "/user/events.json"
 		});
 		
 	});
-
 // Rich text editor/WYSIWYG
 
 	$(document).ready(function() {
